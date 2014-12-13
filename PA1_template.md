@@ -29,7 +29,7 @@ dailySteps <- with(activityData, by(steps, date, function(x) sum(x, na.rm = TRUE
 hist(dailySteps, xlab = "Steps per Day", main = NULL, breaks = 20)
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-3-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
 
 ### Mean and median number of steps taken each day
 #### Mean
@@ -63,7 +63,7 @@ intervalMeanSteps <- with(activityData, by(steps, interval, function(x) mean(x, 
 plot(unique(activityData$interval), intervalMeanSteps, type = "l", ylab = "5-minute intervals", xlab = "Average number of steps taken")
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-6-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-6-1.png) 
 
 ### Interval with maximum steps
 
@@ -121,7 +121,7 @@ estDailySteps <- with(estimatedData, by(steps, date, function(x) sum(x, na.rm = 
 hist(estDailySteps, xlab = "Steps per Day", main = NULL, breaks = 20)
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-10-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-10-1.png) 
 #### Mean total steps 
 
 ```r
@@ -160,4 +160,4 @@ weekdayMeanSteps <- with(subset(dayFactorData, weekend == FALSE), by(steps, inte
 plot(unique(dayFactorData$interval), weekdayMeanSteps, type = "l", ylab = "weekday", xlab = "Average steps per 5-minute interval", ylim = c(0, 250))
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-13-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-13-1.png) 
