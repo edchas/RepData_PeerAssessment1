@@ -9,7 +9,7 @@ output: html_document
 #### Reading in the dataset
 
 ```{r}
-activityData <- read.csv("./activity.csv")
+activityData <- read.csv(unzip("./activity.zip"))
 ```
 #### Processing the data
 This changes the date to a POSIX format.
