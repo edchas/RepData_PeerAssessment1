@@ -122,7 +122,9 @@ hist(estDailySteps, xlab = "Steps per Day", main = NULL, breaks = 20)
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-10-1.png) 
+
 #### Mean total steps 
+
 
 ```r
 mean(estDailySteps, na.rm = TRUE)

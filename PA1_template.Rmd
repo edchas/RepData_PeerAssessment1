@@ -90,7 +90,9 @@ estimatedData$steps <- replace(estimatedData$steps, is.na(estimatedData$steps), 
 estDailySteps <- with(estimatedData, by(steps, date, function(x) sum(x, na.rm = TRUE)))
 hist(estDailySteps, xlab = "Steps per Day", main = NULL, breaks = 20)
 ```
+
 #### Mean total steps 
+
 ```{r}
 mean(estDailySteps, na.rm = TRUE)
 ```
